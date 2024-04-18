@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "dev.jianastrero.form_dsl"
+    namespace = "dev.jianastrero.formdsl"
     compileSdk = 34
 
     defaultConfig {

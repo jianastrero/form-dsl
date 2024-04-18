@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Form DSL"
 include(":example")
-include(":form_dsl")
+include(":formdsl")
