@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import dev.jianastrero.formdsl.VerticalForm
 import dev.jianastrero.formdslexample.ui.theme.FormDSLTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,24 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background,
                 ) {
-                    Greeting("Android")
+                    VerticalForm(modifier = Modifier.fillMaxSize()) {
+                        page {
+                            title(text = "Title 1")
+                            subtitle(text = "Subtitle 1")
+                        }
+                        page {
+                            title(text = "Title 2")
+                            subtitle(text = "Subtitle 2")
+                        }
+                        page {
+                            title(text = "Title 3")
+                            subtitle(text = "Subtitle 3")
+                        }
+                        page {
+                            title(text = "Title 4")
+                            subtitle(text = "Subtitle 4")
+                        }
+                    }
                 }
             }
         }

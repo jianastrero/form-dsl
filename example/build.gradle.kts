@@ -63,6 +63,9 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     debugImplementation(libs.ui.tooling)
 
+    // FormDSL
+    implementation(project(":formdsl"))
+
     testImplementation(libs.junit)
 
     androidTestImplementation(libs.androidx.junit)
